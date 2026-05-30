@@ -1,0 +1,6 @@
+{
+  "name": "Fun Earn",
+  "description": "Fun Earn - Play, Refer, and Earn Rewards! Features daily check-ins, tasks, and multiplayer games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
