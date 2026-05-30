@@ -13,14 +13,13 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-
-      - name: Grant execute permission
-        run: chmod +x gradlew
+        with:
+          gradle-version: '8.7'
 
       - name: Build APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
         env:
-          GRADLE_OPTS: "-Xmx2048m -XX:MaxMetaspaceSize=512m"
+          GRADLE_OPTS: "-Xmx2048m"
 
       - uses: actions/upload-artifact@v4
         with:
